@@ -1,0 +1,53 @@
+/*
+react为我们提供了一个内置功能的项目，允许我们将样式范围限定为组件component。
+这个功能叫做css module: 这是一个在幕后的代码转换，可以确保我们可以附加css文件到特定的组件。
+命名方式：xxx.module.css
+
+*/
+.header {
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #77002e;
+  padding: 0 10%;
+}
+
+.logo {
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+
+.header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: baseline;
+}
+
+.header li {
+  margin-left: 3rem;
+}
+
+.header a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #fcb8d2;
+}
+
+.header a:hover,
+.header a:active,
+.header a:active {
+  color: white;
+}
+
+.badge {
+  background-color: #cc2062;
+  color: white;
+  border-radius: 12px;
+  padding: 0 1rem;
+  margin-left: 0.5rem;
+}
