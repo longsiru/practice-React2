@@ -9,7 +9,7 @@ const FavoritesContext = createContext({
   itemIsFavorite: (meetupId) => {},
 }); //createContext()需要有个参数。参数是createContext的初始值，可以是一个对象，
 
-function FavoritesContextPoovider(props) {
+export function FavoritesContextPoovider(props) {
   const [userFavorites, setUserFaorites] = useState([]);
   function addFavoriteHandler(favoriteMeetup) {
     //setUserFaorites(userFavorites.concat(favoriteMeetup));  //concat()类似于push但是返回一个新的数组，这里是添加了meetup的新数组，我们将其设置为新的状态。但是这个是有问题的。
